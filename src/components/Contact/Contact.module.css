@@ -1,0 +1,12 @@
+.container{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn{
+    margin-left: auto;
+}
