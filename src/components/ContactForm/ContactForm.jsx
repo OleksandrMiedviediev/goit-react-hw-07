@@ -36,7 +36,7 @@ export default function ContactForm() {
         <label htmlFor={numberId}>Number:</label>
         <Field type="text" name="number" id = {numberId}/>
         <ErrorMessage className={css.error} name='number' component="span"/>
-        <button type="submit">Add contact</button>
+        <button className={css.btn} type="submit">Add contact</button>
       </Form>
     </Formik>
   )
