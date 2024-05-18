@@ -40,7 +40,7 @@ export const selectLoading = state => state.contacts.loading;
 export const selectError = state => state.contacts.error;
 export const selectContacts = state => state.contacts.items;
 
-export const selectVisibleContacts = createSelector([selectContacts, selectFilter], (contacts, nameFilter) => {
+export const selectFilteredContacts = createSelector([selectContacts, selectFilter], (contacts, nameFilter) => {
     return contacts.filter(item =>item.name.toLowerCase().includes(nameFilter.toLowerCase()))
 })
 
